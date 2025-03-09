@@ -79,18 +79,19 @@ body {
     bottom: 0px;
   }
 }
-.content h1{
 
-  font-size:15rem;
+.content h1 {
+
+  font-size: 15rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #01442a;
 }
+
 .content i {
   font-size: 20rem;
   color: #610712;
   position: relative;
 }
-
 
 /* ===truck-medical-start=== */
 
@@ -111,11 +112,8 @@ body {
   to {
     right: 0px;
   }
-}
-
-
-/* ---end--- */
-
+} 
+/* ---end--- */ 
 /*=========navbar-brand======  */
 .navbar-brand img {
   height: auto;
@@ -172,6 +170,41 @@ body {
   color: #090358;
 }
 
+/* -----About_side---- */
+.About_side {
+  position: relative;
+  animation: About_side 10s  ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+}
+
+@keyframes About_side {
+  from {
+    right: 700px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.Image_side{
+  position: relative;
+  animation: Image_side 10s  ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+}
+
+@keyframes Image_side {
+  from {
+    left: 500px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+/* ----end--- */
 /* ===end==== */
 
 /* ======Medicare_images==== */
@@ -237,7 +270,9 @@ body {
   border-radius: 100%;
   margin: 5px;
   border: 1px #610712 dotted;
+  transition: transform 2s;
 }
+
 
 .fa-envelope {
   background: #ebe3e4;
@@ -247,6 +282,8 @@ body {
   border-radius: 100%;
   margin: 5px;
   border: 1px #610712 dotted;
+
+  transition: transform 2s;
 }
 
 .fa-facebook {
@@ -257,6 +294,8 @@ body {
   border-radius: 100%;
   margin: 5px;
   border: 1px #610712 dotted;
+
+  transition: transform 2s;
 }
 
 .fa-twitter {
@@ -268,6 +307,8 @@ body {
   border-radius: 100%;
   margin: 5px;
   border: 1px #610712 dotted;
+
+  transition: transform 2s;
 }
 
 .fa-whatsapp {
@@ -280,6 +321,8 @@ body {
   margin: 5px;
   border: 1px #610712 dotted;
 
+  transition: transform 2s;
+
 }
 
 .fa-instagram {
@@ -291,7 +334,20 @@ body {
   border-radius: 100%;
   margin: 5px;
   border: 1px #610712 dotted;
+
+  transition: transform 2s;
 }
+
+.fa-envelope:hover,
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-phone:hover,
+.fa-twitter:hover,
+.fa-whatsapp:hover {
+  color: #383434;
+  transform: rotate(-360deg);
+}
+
 
 /* ===en=== */
 
@@ -329,7 +385,7 @@ body {
 
 /* --------services------ */
 .services {
-  height: 800px;
+  height: 1200px;
   width: auto;
   background: url("../src/assets/images/slider_2.jpg");
   background-size: cover;
@@ -337,10 +393,27 @@ body {
 
 }
 
+.icon_set {
+  text-align: center;
+  color: #f7f6f6;
+  font-size: 6rem;
+  position: relative;
+  top: 5%;
+  transition: filter 2s ease-in-out, width 2s, height 2s, transform 2s;
+
+}
+
+.icon_set:hover {
+  width: 300px;
+  height: 300px;
+  color: #610712;
+  transform: rotate(360deg);
+}
+
 /* --services-row-----*/
 .services .row {
   background: #2b030893;
-  height: 800px;
+  height: 1200px;
   width: auto;
 }
 
@@ -363,8 +436,6 @@ body {
 
 /* =====end==== */
 
-
-/* ---end-- */
 /* =============footer====== */
 .footer {
   background: #7a4249;
