@@ -1,25 +1,394 @@
- 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---end--- */
+/* ====loader----*/
+
+.loader_start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faf9f9;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content span {
+  font-weight: bold;
+  position: relative;
+  animation: mymove 2s;
+  animation-fill-mode: forwards;
+}
+
+
+#m {
+  animation-timing-function: linear;
+}
+
+#e {
+  animation-timing-function: ease;
+}
+
+#l {
+  animation-timing-function: ease-in;
+}
+
+#c {
+  animation-timing-function: ease-out;
+}
+
+#o {
+  animation-timing-function: ease-in-out;
+}
+
+#m {
+  animation-timing-function: ease-in;
+}
+
+#e {
+  animation-timing-function: ease-in-out;
+}
+
+#heart {
+
+  animation-timing-function: ease-out;
+}
+
+@keyframes mymove {
+  from {
+    bottom: 300px;
+  }
+
+  to {
+    bottom: 0px;
+  }
+}
+.content h1{
+
+  font-size:15rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #01442a;
+}
+.content i {
+  font-size: 20rem;
+  color: #610712;
+  position: relative;
+}
+
+
+/* ===truck-medical-start=== */
+
+.road i {
+  font-size: 27rem;
+  color: #610712;
+  position: relative;
+  animation: track-move 5s linear infinite;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+}
+
+@keyframes track-move {
+  from {
+    right: 700px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+
+/* ---end--- */
+
+/*=========navbar-brand======  */
+.navbar-brand img {
+  height: auto;
+  width: 100%;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(4, 94, 65);
+
+}
+
+/* =======end===== */
+/*=====slider images =====*/
+.Home_Slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slick-dots li button:before {
+  font-size: 23px;
+  color: #f7f6f6;
+  opacity: 1;
+  z-index: 99;
+}
+
+.slick-dots {
+  bottom: 10px;
+  /*===== Adjust position of dots (optional) ==*/
+}
 
 
 
+/* ====end=== */
+/* =====About-section==== */
+.About-section {
+  padding: 15px;
+}
 
-
-
-
- /* =============footer====== */
-
- .grid {
-  background: #a38f8f;
-  height: 450px;
+.About-section img {
+  height: 100%;
   width: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
-  grid-gap: 10px; /* Space between grid items */
 }
 
-.grid-item { 
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
+.About-section h3 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: start;
+  height: 90px;
+  width: auto;
+  color: #090358;
 }
+
+/* ===end==== */
+
+/* ======Medicare_images==== */
+.Medicare_images {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  margin: 15px;
+}
+
+/* ====end==== */
+
+/*=====grid-item==== */
+.grid-side img {
+  height: auto;
+  width: 100%;
+  text-align: top;
+  background-attachment: fixed;
+  transition: transform 2s ease-in-out, filter 2s ease-in-out;
+}
+
+
+.grid-side img:hover {
+  text-align: top;
+  cursor: progress;
+  z-index: 99;
+  transform: translateY(50%);
+  filter: grayscale(100%) brightness(50%);
+}
+
+/* =====end==== */
+.Medicare_card {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+/* =====card==== */
+.card {
+  height: auto;
+  width: 100%;
+}
+
+.card img {
+  height: auto;
+  width: 100%;
+}
+
+
+/* ==end=== */
+/* =====icon== */
+.fa-phone {
+  background: #ebe3e4;
+  color: #041647;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px;
+  border: 1px #610712 dotted;
+}
+
+.fa-envelope {
+  background: #ebe3e4;
+  color: #a7210a;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px;
+  border: 1px #610712 dotted;
+}
+
+.fa-facebook {
+  background: #ebe3e4;
+  color: #090358;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px;
+  border: 1px #610712 dotted;
+}
+
+.fa-twitter {
+
+  background: #ebe3e4;
+  color: #03011d;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px;
+  border: 1px #610712 dotted;
+}
+
+.fa-whatsapp {
+
+  background: #ebe3e4;
+  color: #05a74e;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px;
+  border: 1px #610712 dotted;
+
+}
+
+.fa-instagram {
+
+  background: #ebe3e4;
+  color: #8a0574;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 100%;
+  margin: 5px;
+  border: 1px #610712 dotted;
+}
+
+/* ===en=== */
+
+/* -----stricker_add------ */
+.stricker_add {
+  background: #07855ba6;
+  height: 300px;
+  width: auto;
+  position: relative;
+  top: -70px;
+}
+
+/* ---end---- */
+/* ------btn---- */
+.button {
+  color: #ebe3e4fd;
+  background: #7a1f2a;
+  padding: 12px 30px 12px 30px;
+  font-size: medium;
+  font-weight: 600;
+  text-align: center;
+  border: 1px dotted #ebe3e4ea;
+  text-decoration: none;
+  transition: color 1s, background 1s, border 1s;
+}
+
+.button:hover {
+  color: #7a1f2a;
+  background: #ebe3e4ea;
+  border: 1px dotted #b4404e;
+  transition-delay: 1s;
+}
+
+/* ---end--- */
+
+/* --------services------ */
+.services {
+  height: 800px;
+  width: auto;
+  background: url("../src/assets/images/slider_2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/* --services-row-----*/
+.services .row {
+  background: #2b030893;
+  height: 800px;
+  width: auto;
+}
+
+/* -----end---- */
+/* ======Add_extention===== */
+.Add_extention {
+  height: 500px;
+  width: auto;
+  background: url("../src/assets/images/slider_4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.Add_extention .row {
+  background: #5e040e9d;
+  height: 500px;
+  width: auto;
+}
+
+/* =====end==== */
+
+
+/* ---end-- */
+/* =============footer====== */
+.footer {
+  background: #7a4249;
+  text-transform: uppercase;
+  height: 500px;
+  width: auto;
+  color: #ebe3e4;
+  padding: 100px;
+  text-align: initial;
+}
+
+.footer h3 {
+  text-align: justify;
+  text-align: initial;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+
+.footer ul {
+  list-style: none;
+  text-align: initial;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+/* ==========end========== */
