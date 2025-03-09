@@ -77,18 +77,21 @@ function Home() {
                 <div className="About-section my-5">
                     <div className="row g-5">
                         <div className="col-7">
-                            <h3>About <span className="text-danger fw-bolder">||</span> Us..</h3>
-                            <h3 className="border-bottom border-5 border-danger mt-2">Life, Giving, Breakthroughs...</h3>
-                            <p className="mt-5 fw-bold text-secondary">We are inspired by <span className="text-danger"> our patients’ </span> courage, our caregivers’ compassion, and our scientists’ curiosity—all fueled by our donors’ generosity.</p>
+                            <div className="About_side">
+                                <h3>About <span className="text-danger fw-bolder">||</span> Us..</h3>
+                                <h3 className="border-bottom border-5 border-danger mt-2">Life, Giving, Breakthroughs...</h3>
+                                <p className="mt-5 fw-bold text-secondary">We are inspired by <span className="text-danger"> our patients’ </span> courage, our caregivers’ compassion, and our scientists’ curiosity—all fueled by our donors’ generosity.</p>
 
-                            <p className="mt-5 fw-bold text-secondary border-bottom border-2 border-secondry">We are inspired by <span className="text-danger"> With a deep passion for patient well-being,</span> Dr. [John Deo] specializes in [mention key specialties, e.g., internal medicine, pediatrics, cardiology] and is dedicated to offering personalized treatments using the latest advancements in medical science.</p>
-                            <p className="mt-5 fw-bold text-secondary">Our goal is to ensure every patient receives comprehensive, compassionate, and effective care, tailored to their unique health needs. </p>
-                            <p className="mt-5 fw-bold text-secondary border-bottom border-2 border-secondry">We are inspired by <span className="text-danger"> our patients’ </span> courage, our caregivers’ compassion, and our scientists’ curiosity—all fueled by our donors’ generosity.</p><p className="mt-5 fw-bold text-secondary border-bottom border-2 border-secondry">We are inspired by <span className="text-danger"> Beyond medical expertise, Dr. [Mohan Tiwari] </span>is known for a compassionate approach, taking the time to listen,</p>
-
+                                <p className="mt-5 fw-bold text-secondary border-bottom border-2 border-secondry">We are inspired by <span className="text-danger"> With a deep passion for patient well-being,</span> Dr. [John Deo] specializes in [mention key specialties, e.g., internal medicine, pediatrics, cardiology] and is dedicated to offering personalized treatments using the latest advancements in medical science.</p>
+                                <p className="mt-5 fw-bold text-secondary">Our goal is to ensure every patient receives comprehensive, compassionate, and effective care, tailored to their unique health needs. </p>
+                                <p className="mt-5 fw-bold text-secondary border-bottom border-2 border-secondry">We are inspired by <span className="text-danger"> our patients’ </span> courage, our caregivers’ compassion, and our scientists’ curiosity—all fueled by our donors’ generosity.</p><p className="mt-5 fw-bold text-secondary border-bottom border-2 border-secondry">We are inspired by <span className="text-danger"> Beyond medical expertise, Dr. [Mohan Tiwari] </span>is known for a compassionate approach, taking the time to listen,</p>
+                            </div>
                             <a href="#" className="button mt-5">Give Now</a>
                         </div>
                         <div className="col-5">
+                            <div className="Image_side">
                             <img src={require("../assets/images/row_alla.png")} alt="ladydoctor" />
+                            </div>
                         </div>
                     </div>
 
@@ -99,14 +102,69 @@ function Home() {
             {/* gap-images */}
             <div className="services">
                 <div className="row">
-                    <div className="col-4">
-                        <i class="fa-solid fa-notes-medical"></i>
+                    <div className="Heading text-center mt-5">
+                        <h1 className="text-white fw-bold">Service<span className="text-danger"> + </span>Health</h1>
                     </div>
-                    <div className="col-4">
-                    <i class="fa-solid fa-house-medical"></i>
-                    </div> 
-                    <div className="col-4">
-                    <i class="fa-solid fa-suitcase-medical"></i>
+                    <div className="col-3">
+                        <div className="icon_set">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">Note Medical</p>
+                    </div>
+                    <div className="col-3">
+                        <div className="icon_set">
+                            <i class="fa-solid fa-house-medical"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3" >House Medical</p>
+                    </div>
+                    <div className="col-3">
+                        <div className="icon_set">
+                            <i class="fa-solid fa-house-medical-flag"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">Flag Medical</p>
+                    </div>
+
+                    <div className="col-3">
+                        <div className="icon_set">
+                            <i class="fa-solid fa-house-medical-circle-xmark"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical circle Mark</p>
+                    </div>
+                    <div className="col-3">
+                        <div className="icon_set">
+                            <i class="fa-solid fa-house-medical-circle-exclamation"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical circle exclamation</p>
+                    </div>
+                    <div className="col-3">
+                        <div className="icon_set">
+                            <i class="fa-solid fa-house-medical-circle-check"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical Circle Check</p>
+                    </div>
+
+                    <div className="col-3">
+                        <div className="icon_set">
+
+                            <i class="fa-solid fa-truck-medical"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical truck</p>
+                    </div>
+
+                    <div className="col-3">
+                        <div className="icon_set">
+
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+
+                        <p className="text-center text-warning mt-2 fw-bold fs-3">Medical laptop</p>
                     </div>
 
                 </div>
@@ -163,9 +221,7 @@ function Home() {
             <div className="medicarehealth text-center my-5">
                 <strong className="text-primary mt-3 border-bottom border-success border-2 fs-3 ">Brigham<span className="text-danger">-</span>Health</strong>
                 <h1 className="text-dark"><strong>Helping <span className="text-decoration-underline text-danger">our</span> patients</strong></h1>
-                <div className="health-card">
 
-                </div>
             </div>
 
             <div className="Medicare_card my-5">
