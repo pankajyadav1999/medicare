@@ -24,8 +24,9 @@ class PulsLoader extends Component {
         {isLoading ? (
           <div className="loader">
             <div className="road">
+              
               {/* The truck icon moves across the road */}   
-              <i class="fa-solid fa-truck-medical moving-truck"></i> 
+              <i class="fa-solid fa-truck-medical"></i> 
             </div>
           </div>
         ) : (
