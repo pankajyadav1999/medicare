@@ -105,67 +105,32 @@ function Home() {
                     <div className="Heading text-center mt-5">
                         <h1 className="text-white fw-bold">Service<span className="text-danger"> + </span>Health</h1>
                     </div>
-                    <div className="col-3">
-                        <div className="icon_set">
-                            <i class="fa-solid fa-notes-medical"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">Note Medical</p>
+                    <div className="col-3"> 
+                        <div className="text-center">
+                            <i class="fa-solid fa-notes-medical icon_set"></i> 
+                            </div>
+                        <p className="text-center text-light mt-2 ">Note Medical</p>
                     </div>
-                    <div className="col-3">
-                        <div className="icon_set">
-                            <i class="fa-solid fa-house-medical"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3" >House Medical</p>
+                    <div className="col-3"> 
+                    <div className="text-center">
+                            <i class="fa-solid fa-house-medical icon_set"></i> 
                     </div>
-                    <div className="col-3">
-                        <div className="icon_set">
-                            <i class="fa-solid fa-house-medical-flag"></i>
-                        </div>
+                        <p className="text-center text-light mt-2" >House Medical</p>
+                    </div>
+                    <div className="col-3"> 
+                        <div className="text-center">
+                            <i class="fa-solid fa-house-medical-flag icon_set"></i> 
+                            </div>
 
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">Flag Medical</p>
+                        <p className="text-center text-light mt-2 ">Flag Medical</p>
                     </div>
 
-                    <div className="col-3">
-                        <div className="icon_set">
-                            <i class="fa-solid fa-house-medical-circle-xmark"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical circle Mark</p>
-                    </div>
-                    <div className="col-3">
-                        <div className="icon_set">
-                            <i class="fa-solid fa-house-medical-circle-exclamation"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical circle exclamation</p>
-                    </div>
-                    <div className="col-3">
-                        <div className="icon_set">
-                            <i class="fa-solid fa-house-medical-circle-check"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical Circle Check</p>
-                    </div>
-
-                    <div className="col-3">
-                        <div className="icon_set">
-
-                            <i class="fa-solid fa-truck-medical"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">medical truck</p>
-                    </div>
-
-                    <div className="col-3">
-                        <div className="icon_set">
-
-                            <i class="fa-solid fa-laptop-medical"></i>
-                        </div>
-
-                        <p className="text-center text-warning mt-2 fw-bold fs-3">Medical laptop</p>
-                    </div>
+                    <div className="col-3"> 
+                        <div className="text-center">
+                            <i class="fa-solid fa-house-medical-circle-xmark icon_set"></i> 
+                            </div>
+                        <p className="text-center text-light mt-2 ">medical circle Mark</p>
+                    </div> 
 
                 </div>
             </div>

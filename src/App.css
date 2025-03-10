@@ -13,14 +13,16 @@ body {
 }
 
 /* ---end--- */
+
 /* ====loader----*/
 
 .loader_start {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #faf9f9;
+  height: 100vh; 
+  background: linear-gradient(to top, #222324 30%, #5ce4ee 50%), /* Sky gradient */
+  linear-gradient(to bottom, #262829 50%, #686262 100%); /* Road gradient */ 
 }
 
 .loader {
@@ -97,7 +99,7 @@ body {
 
 .road i {
   font-size: 27rem;
-  color: #610712;
+  color: #38050d;
   position: relative;
   animation: track-move 5s linear infinite;
   animation-fill-mode: forwards;
@@ -385,7 +387,7 @@ body {
 
 /* --------services------ */
 .services {
-  height: 1200px;
+  height: 550px;
   width: auto;
   background: url("../src/assets/images/slider_2.jpg");
   background-size: cover;
@@ -396,27 +398,25 @@ body {
 .icon_set {
   text-align: center;
   color: #f7f6f6;
-  font-size: 6rem;
+  font-size:4rem;
   position: relative;
   top: 5%;
-  transition: filter 2s ease-in-out, width 2s, height 2s, transform 2s;
+  transition: filter 2s ease-in-out, transform 2s;
 
 }
 
-.icon_set:hover {
-  width: 300px;
-  height: 300px;
-  color: #610712;
+.icon_set:hover { 
+  color: #7a2831;
   transform: rotate(360deg);
 }
 
 /* --services-row-----*/
 .services .row {
   background: #2b030893;
-  height: 1200px;
+  height: 550px;
   width: auto;
 }
-
+ 
 /* -----end---- */
 /* ======Add_extention===== */
 .Add_extention {
@@ -463,3 +463,5 @@ body {
 }
 
 /* ==========end========== */
+
+
