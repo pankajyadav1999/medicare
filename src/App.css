@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; 
-  background: linear-gradient(to top, #222324 30%, #5ce4ee 50%), /* Sky gradient */
+  background: linear-gradient(to top, #222324 30%, #79cbd1 50%), /* Sky gradient */
   linear-gradient(to bottom, #262829 50%, #686262 100%); /* Road gradient */ 
 }
 
@@ -84,13 +84,13 @@ body {
 
 .content h1 {
 
-  font-size: 15rem;
+  font-size:10rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #f7f6f6;
 }
 
 .content i {
-  font-size: 20rem;
+  font-size: 12rem;
   color: #610712;
   position: relative;
 }
@@ -363,6 +363,71 @@ body {
 }
 
 /* ---end---- */
+
+/* LogIn.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://example.com/medicine-background.jpg') no-repeat center center/cover; /* Replace with your own medicine-themed image */
+  background-color: #f0f4f8;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
 /* ------btn---- */
 .button {
   color: #ebe3e4fd;

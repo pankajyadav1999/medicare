@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link,Outlet } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // ====fontawesome====// 
 import images from '../assets/images/medicare_logo.png';
 function Layout({ children }) {
@@ -58,23 +57,24 @@ function Layout({ children }) {
 
             </div>
 
-            <Link className="button" role="button" to="#">LogIn</Link>
+            <Link className="button" role="button" to="/LogIn">LogIn</Link>
           </div>
         </nav>
       </header>
 
-      {/* Main Content */}
+      {/* =====Main Content======= */}
       <main>
-        {children} {/* This will render the route-specific content */}
+        <Outlet/> {/* ====the route-specific content =====*/}
+        
       </main>
 
-  {/* gap-images */}
+  {/* ====gap-images===== */}
   <div className="Add_extention">
                 <div className="row"> 
                 </div>
             </div>
 
-{/* --end */}
+{/* --end==== */}
 
           
       {/* Footer */}

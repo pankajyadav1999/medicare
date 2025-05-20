@@ -5,14 +5,13 @@ class PulsLoader extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true, // Loader is visible initially
+      isLoading: true, 
     };
   }
 
-  componentDidMount() {
-    // Simulate a delay (e.g., fetching data or rendering time)
+  componentDidMount() { 
     setTimeout(() => {
-      this.setState({ isLoading: false }); // Hide loader after 3 seconds
+      this.setState({ isLoading: false }); 
     }, 3000);
   }
 
@@ -24,8 +23,7 @@ class PulsLoader extends Component {
         {isLoading ? (
           <div className="loader">
             <div className="road">
-              
-              {/* The truck icon moves across the road */}   
+               
               <i class="fa-solid fa-truck-medical"></i> 
             </div>
           </div>
